@@ -59,7 +59,7 @@ static CGFloat CRGetStatusBarHeightForOrientation(UIInterfaceOrientation orienta
     CGRect statusBarFrame = [[UIApplication sharedApplication] statusBarFrame];
 
     if (CRFrameAutoAdjustedForOrientation()) {
-        return CGRectGetHeight(statusBarFrame);
+        return 24 + CGRectGetHeight(statusBarFrame);
     }
 
     return 24 + ( (UIInterfaceOrientationIsLandscape(orientation)) ?
